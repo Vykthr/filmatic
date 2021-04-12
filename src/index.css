@@ -5,9 +5,136 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000 !important;
+  color: #fff !important;
+  /* #e50914 */
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #db0510 !important;
+  border: 0 !important;
+  box-shadow: 0 !important;
+  outline: 0 !important;
+}
+.btn-outline-primary {
+  color: #fff !important;
+  border-color: #db0510 !important;
+  box-shadow: 0 !important;
+  outline: 0 !important;
+}
+.btn-outline-primary:hover {
+  color: #fff !important;
+  border-color: #db0510 !important;
+  outline: 0 !important;
+  background: #db0510 !important;
+}
+.btn {
+  padding: 10px 20px !important;
+  width: 200px;
+  margin: .5rem;
+  box-shadow: none !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  background-color: #000;
+  max-width: 100% !important;
+  min-height: 300px;
+  margin-bottom: .5rem;
+}
+
+.nav {
+  padding: 20px;
+  position: absolute !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: block;
+  top: 0;
+  z-index: 2;
+}
+.nav .btn {
+  width: auto !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.navLink {
+  color: #fff !important;
+}
+.main-header{
+  background-image: url("https://karmanhealth-karmanhealthcare.netdna-ssl.com/wp-content/uploads/2017/12/902.jpg");
+  min-height: 800px;
+  margin-bottom: 5rem;
+}
+.image-overlay{
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.image-overlay  h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.movie-card.card {
+  border: 1px solid #333;
+  box-shadow: #333;
+}
+
+.form-control{
+  background-color: #000 !important;
+  color: #fff !important
+}
+
+.modal-content{
+  background-color: #333 !important;
+}
+.form-control {
+  height: 50px !important;
+}
+.footerLinkGroup {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footerLink {
+  color: #757575;
+  margin: 10px 0 !important;
+}
+.footerLink:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer {
+  border-top: 2px solid #333;
+}
+
+.footerLink.social {
+  margin: 0 10px !important;
+  font-size: 25px;
+}
+
+.footer-column.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav.nav-tabs {
+  padding: 0px;
+  position: relative !important;
+  background-color: inherit !important;
+  z-index: 0;
 }

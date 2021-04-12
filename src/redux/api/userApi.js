@@ -1,14 +1,10 @@
 import axios from "axios";
-const $axios = axios.create({
-  headers: {
-    "Access-Control-Allow-Origin" : "*",
-  },
-})
+
 export default {
   login(payload) {
-    return $axios.post("https://filmatic-api.netlify.app/auth/login", payload);
+    return axios.post("http://localhost:4000/auth/login", payload);
   },
   register(payload) {
-    return $axios.post("https://filmatic-api.netlify.app/auth/create", payload);
+    return axios.post("http://localhost:4000/auth/create", payload);
   },
 };

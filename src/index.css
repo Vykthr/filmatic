@@ -78,9 +78,12 @@ code {
   width: 100%;
   display: flex;
   /* justify-content: center; */
+  height: 100%;
   align-items: center;
 }
-
+.navbar-expand .navbar-collapse {
+  float: right !important;
+}
 .image-overlay  h1 {
   font-size: 60px;
   text-transform: uppercase;

@@ -54,9 +54,9 @@ const MovieView = ({ user, movie, rentMovie }) => {
                                 </Form.Control>
                             </Form.Group>
                         </Form>
-                        {
-                            movie.movieList.filter((movie) => movie.id === state.movie.id)[0]?.rentedTo.indexOf(user.userData.id) > -1 ? 
-                            <Link to="/account"><Button>You have rented this movie, visit account to to watch </Button></Link> :
+                        {   user.userData &&  movie.movieList.filter((movie) => movie.id === state.movie.id)[0]?.rentedTo.indexOf(user.userData.id) > -1 ?
+                                <Link to="/account"><Button>You have rented this movie, visit account to to watch </Button></Link> 
+                            :
                             stock > 0 ? <Button onClick={() => { user.userData ? setModalShow(true) : setAuthModal(true) }}>Proceed - &#8358;{price.toLocaleString('en-Gb')}</Button> :
                             <Button>Out of Stock - check back later</Button>
                         }
